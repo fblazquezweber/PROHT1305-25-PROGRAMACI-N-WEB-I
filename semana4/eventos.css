@@ -1,0 +1,16 @@
+.tabla-eventos {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tabla-eventos th, .tabla-eventos td {
+    border: 1px solid #bdbdbd; 
+    text-align: center;
+    padding: 10px;
+}
+
+.tabla-eventos th {
+    background-color: #004d40; 
+    color: white;
+}
+

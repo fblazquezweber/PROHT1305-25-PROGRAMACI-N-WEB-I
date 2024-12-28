@@ -1,0 +1,71 @@
+#registro-titulo{
+    color:green;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+#registro-contenedor{
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 15px;
+    width: 40%;
+    margin: 0 auto;
+}
+#registro-formulario{
+    display: flex;
+    align-content: first baseline;
+    flex-direction: column;
+    
+    width: 100%;
+}
+.registro-fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.registro-columna{
+    display: flex;
+    flex-direction: column;
+    padding: 0px; 
+    margin-bottom: 0px;
+    flex: 1;
+}
+.registro-columna input, .registro-columna select{
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0; 
+    flex: 1;
+    box-sizing: border-box;
+}
+.radio-group { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+.boton-comun { 
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    display: block; 
+    cursor: pointer; 
+}
+.boton-comun:hover { 
+    background-color: #45a049; 
+}
+#registro-boton { 
+    width: 50%; 
+    margin: 20px auto; 
+}
+#registro-volver-inicio{
+    display: block; 
+    text-align: center; 
+    margin-top: 20px;
+}

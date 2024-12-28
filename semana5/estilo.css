@@ -1,0 +1,93 @@
+@import url('estilos-formulario-login.css');
+body.dashboard {
+    color: #333;                               /* Color de texto heredado por los elementos hijos */
+    font-family: Arial, sans-serif;                /* Familia tipográfica que será heredada */
+}
+
+.titulo-principal {
+    color:green;
+    text-align: center;
+}
+#seccion-quienes-somos {
+    background-color: #e8f5e9;
+    border: 2px solid #81c784;
+    padding: 15px;
+    border-radius: 10px;
+}
+#seccion-quienes-somos h2 {
+    color: #388e3c; 
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+#seccion-quienes-somos p {
+    color: #1b5e20; 
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.destacado {
+    font-weight: bold;
+    color: #333;
+}
+
+#seccion-actividades-realizadas ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+#seccion-actividades-realizadas li {
+    color: #37474f;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.tabla-eventos {
+    width: 100%;
+    margin: 20px 0;
+}
+.tabla-eventos th, .tabla-eventos td {
+    border: 1px solid #bdbdbd; 
+    text-align: center;
+    padding: 10px;
+}
+.tabla-eventos th {
+    background-color: #004d40; 
+    color: white;
+}
+
+.galeria-imagenes {
+    display: flex; /* Activa el diseño en fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 30px; /* Espaciado entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes bajen a otra fila si no caben */
+    margin: 0 auto;
+    padding: 0;
+}
+.galeria-imagenes img {
+    max-width: 200px; /* Ajusta el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Opcional: Bordes redondeados */
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
+}
+
+img {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 300px; /* Tamaño máximo */
+    height: auto; /* Mantiene la proporción original */
+    display: block; /* Evita que floten de forma no deseada */
+    margin: 10px auto; /* Centra las imágenes horizontalmente con un espacio entre ellas */
+    border-radius: 8px; 
+}
+
+
+.video-embed {
+    width: 100%;
+    height: 400px;
+    max-width: 800px;
+    display: block;
+    border: none;
+    margin: 0 auto;
+}

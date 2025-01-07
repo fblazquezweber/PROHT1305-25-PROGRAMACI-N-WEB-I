@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro de Usuario</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1 id="registro-titulo">Formulario de Registro de Usuario</h1>
+        <div id="registro-contenedor">
+            <form id="registro-formulario" action="registro.php" method="post">
+                <div class="registro-fila">
+                    <div class="registro-columna">
+                        <label for="registro-nombre">Nombre:</label>
+                        <input type="text" id="registro-nombre" name="registro-nombre" required>
+                    </div>
+                    <div class="registro-columna">
+                        <label for="registro-apellido">Apellido:</label>
+                        <input type="text" id="registro-apellido" name="registro-apellido" required>
+                    </div>
+                </div>
+                <div class="registro-fila">
+                    <div class="registro-columna">
+                        <label for="registro-tipo-documento">Tipo de documento:</label>
+                        <select id="registro-tipo-documento" name="registro-tipo-documento" required>
+                            <option value="DNI">DNI</option>
+                            <option value="RUT">RUT</option>
+                            <option value="Cédula">Cédula</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="registro-columna">
+                        <label for="registro-numero">Número de documento:</label>
+                        <input type="text" id="registro-numero" name="registro-numero" required>
+                    </div>
+                    <div class="registro-columna">
+                        <label for="registro-fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="registro-fecha" name="registro-fecha" required>
+                    </div>
+                </div>
+                
+                <div class="registro-fila">
+                    <label for="genero">Sexo:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="Femenino" required>
+                        <label for="femenino">Femenino</label>
+                    </div>
+                </div>
+
+                <div class="registro-fila">
+                    <div class="registro-columna">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="registro-columna">
+                        <label for="telefono">Teléfono móvil:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+                <button class="boton-comun" id="registro-boton" type="submit">Registrar</button>
+            </form>
+        </div>
+        <a id="registro-volver-inicio" href="index.html">Volver al inicio</a>
+    </body>
+</html>

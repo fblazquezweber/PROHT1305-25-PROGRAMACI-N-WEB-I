@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Página de Inicio</title>
+        <style>
+            @import url('estilos-formulario-login.css');
+            @import url('otros-estilos.css');
+            
+            #login-contenedor {
+                width: 50%; 
+                background-color: #f2f2f2;
+                text-align: center;
+                margin: 15px auto;
+                border: 2px solid #ccc;
+                padding: 15px;
+                box-sizing: border-box;
+                margin-bottom: 0px;
+            }
+            #login-titulo{
+                color:green;
+                padding: 10px;
+                margin: 0 auto;
+                text-align: center;
+                word-wrap: break-word; 
+            }
+            #login-mensaje, #login-subtitulo{
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px;
+            }
+            .login-formulario{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;  
+                margin: 0 auto;
+                text-align: left;
+                padding: 10px;
+            }
+            .login-formulario input, .login-formulario button {
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            #login-usuario-registro {
+                width: 50%; 
+                text-align: center;
+                padding: 15px; 
+                margin: 0 auto; 
+                margin-top: 0; 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="login-contenedor">
+            <h1 id="login-titulo">Bienvenido a la Organización Conservacionista</h1>
+            <p id="login-mensaje">Por favor, inicia sesión o regístrate para continuar.</p>
+            <h2 id="login-subtitulo">Iniciar Sesión</h2>
+            <form class="login-formulario" action ="login.php" method="post">
+                <label for="login-usuario">Usuario:</label>
+                <input type="text" id="login-usuario" name="login-usuario" required>
+                <br>
+                <label for="login-contraseña">Contraseña</label>
+                <input type="password" id="login-contraseña" name="login-contraseña" required>
+                <br>
+                <button class="boton-comun" id="login-boton" type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+        <div id="login-usuario-registro">
+            <h2>¿No tienes cuenta?</h2>
+            <a href="registro.html">Regístrate aquí</a>
+        </div>
+    </body>
+</html>

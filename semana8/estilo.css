@@ -1,0 +1,197 @@
+body.inicio {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#cabecera {
+    background-color: #f0f0f0;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.titulo-principal {
+    color: #4CAF50;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#seccion-quienes-somos {
+    background-color: #e8f5e9; 
+    border: 2px solid #81c784; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#seccion-quienes-somos h2 {
+    color: #4CAF50; 
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#seccion-quienes-somos p {
+    color: #1b5e20; 
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#seccion-actividades-realizadas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#seccion-actividades-realizadas li {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-left: 4px solid green;
+}
+
+.destacado {
+    font-weight: bold;
+    color: green;
+}
+
+#seccion-eventos {
+    background-color: #e8f5e9; 
+}
+
+.tabla-eventos {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tabla-eventos th, .tabla-eventos td {
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    padding: 10px;
+}
+
+.tabla-eventos th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#temas-de-interes {
+    background-color: #e8f5e9;
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.imagen-contenedor {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.imagen-contenedor:hover {
+    transform: scale(1.1); 
+}
+
+#seccion-videos-relacionados {
+    background-color: #e8f5e9;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-embed {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pie-de-pagina {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    body.inicio {
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column; 
+    }
+
+    nav a {
+        padding: 15px 0;
+        width: 100%; 
+        text-align: center;
+    }
+    .galeria-imagenes {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .imagen-contenedor {
+        width: 100%; 
+    }
+    #temas-de-interes .galeria-imagenes {
+        flex-direction: column;
+    }
+
+    .imagen-contenedor {
+        width: 100%;
+    }
+
+    .tabla-eventos th, .tabla-eventos td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
